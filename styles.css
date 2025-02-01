@@ -1,0 +1,229 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#index-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('imagenes/fondo.jpg'); /* Fondo específico para index */
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Estilos para la página lo_sabia.html */
+#lo-sabia-body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('imagenes/corazones.jpg'); /* Fondo de corazones */
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(49, 16, 16, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Estilos para los botones */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Botón "Sí" */
+#si-btn {
+    background: linear-gradient(135deg, #ff6f61, #ffcccb);
+    border: 2px solid #ff6f61;
+    animation: heartbeat 1.5s infinite;
+}
+
+#si-btn:hover {
+    background: linear-gradient(135deg, #ffcccb, #ff6f61);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón "No" */
+#no-btn {
+    background: linear-gradient(135deg, #f44336, #ff8a80);
+    border: 2px solid #f44336;
+    transition: transform 1.5s ease, top 1.5s ease, left 1.5s ease;
+}
+
+#no-btn:hover {
+    background: linear-gradient(135deg, #ff8a80, #f44336);
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botón "Pruébame!" */
+#pruebame-btn {
+    background: linear-gradient(135deg, #ff8a80, #f44336); /* Gradiente rosa */
+    border: 2px solid #f44336; /* Borde rosa */
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Efecto hover para el botón "Pruébame!" */
+#pruebame-btn:hover {
+    background: linear-gradient(135deg, #ff8a80, #f44336); /* Invertir gradiente al hacer hover */
+    transform: scale(1.1); /* Aumentar el tamaño ligeramente */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilo para las imágenes */
+.valentine-img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#contenedor-imagen img {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .container {
+        padding: 20px;
+        max-width: 350px;
+    }
+}
+
+/* Estilo del GIF */
+#kiss-gif {
+    width: 300px;  /* Tamaño mediano del GIF */
+    height: auto;
+    margin-top: 20px;
+    animation: zoomIn 2s ease-in-out; /* Agrego animación de zoom */
+}
+
+#contenedor {
+    text-align: center;
+    background: rgba(49, 16, 16, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;  /* Tamaño mediano */
+}
+
+/* Estilo del texto principal */
+#contenedor p {
+    font-size: 2.5rem;  /* Texto mediano */
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Agrego sombra para hacer que el texto resalte más */
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+/* Estilo para el contenedor del GIF */
+#gif-container {
+    margin-top: 30px; /* Separar el gif del texto */
+}
+
+
+/* Animación de zoom para el GIF */
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
